@@ -14,19 +14,19 @@
 3. class: class is design or blueprint it contens states and behivor is called class
 	
 **********************************************************
-4. import java.util.Scanner;
-	class percent{
-		
+4.import java.util.Scanner;
+	class Percent{
+
 		public static void main(String []args){
 			Scanner scanner=new Scanner(System.in);
-				int sub1=nextInt();
-				int sub2=nextInt();
-		int per=getPercentage();
-			
+				int sub1=scanner.nextInt();
+				int sub2=scanner.nextInt();
+		int per=getPercentage(sub1 ,sub2);
+	System.out.println("percentage"+" "+per+"%");
 			}
 
-		public static int getPercent(int sub1, int sub2){
-			return ((sub1/sub2)/2)*100);
+		public static int getPercentage(int x, int y){
+			return (x+y)*100/200;
 				}
 
 		} 
