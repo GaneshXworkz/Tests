@@ -1,0 +1,116 @@
+1 .find Max Nad min
+     int[] a= {1,2,5,565,654,887,654,1,6548,788};
+		
+		int max=a[0];
+		int min=a[0];
+		
+			for(int i=1;i<a.length;i++) {
+			
+				if(max<a[i]) 
+				{
+					max=a[i];
+				}
+				else if(min>a[i]) 
+				{
+					min=a[i];
+					
+				}
+					
+			}
+			
+			System.out.println(max);
+			System.out.println(min);
+
+
+3. what is generalized and specilized class in java
+
+ans: Generalization is the process of common features from two or more classes, and combining them into a generalized super class. Common features can be methods, attributes and associations. In other word, we can say that a super class is a generalization of its subclass.
+
+specialization is defined as the process of subclassing a superclass entity on the basis of some distinguishing characteristic of the entity in the superclass. The reason for creating such hierarchical relationship is that:
+
+4. a)i don't want my calss to be inherited by any other calss what shoud i do
+
+      ans: make calss final
+	  
+   b)can you give a few examples of final calss defiend in java API
+     ans: String,java.lang.math; 
+
+   c). what are some alternatives to inhertance?
+     ans:   Delegation can be an alternative to inheritance. Delegation means that you use an object of another class as an instance variable, and forward messages to the instance.
+
+5. which sorted collection have you used 
+
+  ans:java.util.Collections
+  
+  
+  
+  
+6. what is the diffrence between linkedList And arrayList
+
+
+ans : 
+          --> linkedList 
+    *his class uses a doubly linked list to store the elements in it. Similar to the ArrayList, this class also supports the storage of all types of objects.
+
+	*This class implements both the List interface and the Deque interface. Therefore, it can act as a list and a deque.
+
+	*This class works better when the application demands manipulation of the stored data.
+	
+	  --->ArrayList
+	
+	*This class uses a dynamic array to store the elements in it. With the introduction of generics, this class supports the storage of all types of objects.
+	
+	*This class implements a List interface. Therefore, this acts as a list.
+	
+	*This class works better when the application demands storing the data and accessing it.
+	
+7. what is listIterator and Iterator in java?	
+
+   -->Iterator
+   
+   *Can traverse elements present in Collection only in the forward direction.
+   *Helps to traverse Map, List and Set.
+   *Indexes cannot be obtained by using Iterator.
+   *Certain methods of Iterator are next(), remove() and hasNext().
+   
+   
+   -->ListIteraror
+   
+   *Can traverse elements present in Collection both in forward and backward directions.
+   *Can only traverse List and not the other two.
+   *It has methods like nextIndex() and previousIndex() to obtain indexes of elements at any time while traversing List.
+   *Certain methods of ListIterator are next(), previous(), hasNext(), hasPrevious(), add(E e).
+   
+   
+ 8. what is the covariant method overrding in java
+
+ans: Covariant Method overriding means that when overriding a method in the child class, the  return type may vary. Before java 5 it was not allowed to override any function if the return type is changed in the child class. But now it is possible only return type is subtype class.
+
+
+9 .what is memory leakage in java
+ans: In Java, the memory leak is a situation when the garbage collector does not recognize the unused objects and they remain in the memory indefinitely that reduces the amount of memory allocated to the application.
+
+10 . exaplin static polymorpisum and dynamic polymorpisum?
+
+ans: static polymorpisum: in calss multiple number methos has same name but deffrience in parameter
+     is static polymorpisum.
+	 
+	  dynamic polymorpisum:same method name and maethod signature but diffrence in calss through child calss
+	  
+	  
+11 . calss Hema{
+
+		private String name;
+		private int age;
+		private String address;
+		private String education;
+
+   }
+ ans:  by Encpsulation making data has private Hema make her data Private.
+
+
+
+
+
+
+ 
