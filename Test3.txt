@@ -1,0 +1,143 @@
+Test 3
+
+1.                     Iterable(I)
+                          |
+                      Collection(I)
+                          | 
+		List(I)   -      Set(I)     - Queue(I)
+		 |                |              |
+	  ArrayList         HastSet       PrirotyQueue
+         |                |
+    Linkaed List        LinkedHashSet
+        |
+     Vector
+        |
+     Stack		
+		
+
+ *************************************************************************************************    
+		
+		List	                                      Set
+*An ordered collection of elements	         *An unordered collection of elements
+*Preserves the insertion order	             *Doesn’t preserves the insertion order
+*Duplicate values are allowed	             *Duplicate values are not allowed
+*Any number of null values can be stored	 *Only one null values can be stored
+*ListIterator can be used to traverse the    *ListIterator cannot be used to traverse a Set
+List in any direction	
+*Contains a legacy class called vector	     *Doesn’t contains any legacy class
+**************************************************************************************************
+2.       MAP(I)
+         |      \
+	  HasMap   sorted Map
+         |        |
+         |        |
+     HashTable   TreeMap
+***************************************************************************************************
+3.
+              HashSet	                                 TreeSet
+>Uses HasMap to store elements                >Uses Treemap to store elements
+>It is unordered in nature	                  >By default, it stores elements in their natural ordering
+>Has faster processing time	                  >Has slower processing time
+>Uses hasCode() and equals() for comparing	  >Uses compare() and compareTo() for comparing
+>Allows only one null element	              >Doesn’t allow any null element
+>Takes up less memory space	                  >Takes up more memory space
+
+
+
+ 
+ 
+  
+ ************************************************************************************************* 
+ 5.
+ fail fast:->Fail-Fast systems abort operation as-fast-as-possible exposing failures immediately and stopping the whole operation.
+
+ fail safe:-> Fail-Safe systems don't abort an operation in the case of a failure. Such systems try to avoid raising failures as much as possible.
+ **************************************************************************************************
+ 6.  
+   using Chars() maethod
+   
+   Ex:
+    String testString = "String";
+  IntStream chars = testString.chars();
+
+ *************************************************************************************************** 
+ 7.The Spliterator API was designed to support efficient parallel traversal in addition to sequential traversal, by supporting decomposition as well as single-element iteration.
+  
+
+ ***************************************************************************************************
+9. 
+  Core (spring-core) is the core of the framework that power features such as Inversion of Control and dependency injection.
+ *************************************************************************************************** 
+13.
+ 
+   StringBuffer
+
+  * StringBuffer operations are thread-safe and synchronized
+  *StringBuffer is to used when multiple threads are working on the same String   
+  *StringBuffer performance is slower when compared to StringBuilder
+  *Syntax: StringBuffer var = new StringBuffer(str);
+  
+  
+  StringBuilder
+  
+  *StringBuilder operations are not thread-safe are not-synchronized.
+  *StringBuilder is used in a single-threaded environment.
+  *StringBuilder performance is faster when compared to StringBuffer
+  *Syntax: StringBuilder var = new StringBuilder(str);
+  
+ ***************************************************************************************************18.
+  public class Main {
+
+    final static int lower_case_a = 'a';
+    final static int lower_case_z = 'z';
+
+    public static void main(String[] args) {
+        String s = "we found a treasure!";
+
+        StringBuffer reverse = new StringBuffer();
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+
+            if ((int)c >= lower_case_a && (int)c <= lower_case_z)
+                reverse.append((char)(lower_case_z - c + lower_case_a));
+            else
+                reverse.append((char) c);
+        }
+        System.out.println(reverse.toString());
+    }
+ }
+ 
+**************************************************************************************
+ 20.
+ 
+  public class Exercise13 {
+  public static void main(String[] args) {
+    // create an empty linked list
+     LinkedList<String> l_list = new LinkedList<String>();
+   // use add() method to add values in the linked list
+          l_list.add("Red");
+          l_list.add("Green");
+          l_list.add("Black");
+          l_list.add("Pink");
+          l_list.add("orange");
+      
+     // print the list
+   System.out.println("The Original linked list: " + l_list);
+
+  // Remove the first element
+    Object firstElement = l_list.removeFirst();
+    System.out.println("Element removed: "+ firstElement);
+ 
+  // Remove the last element
+    Object lastElement = l_list.removeLast();
+    System.out.println("Element removed: "+ lastElement);
+    System.out.println("The New linked list: " + l_list);
+  }
+}
+ ********************************************************************************************
+15.
+
+
+
+
